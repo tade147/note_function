@@ -30,4 +30,49 @@ print(musician)
 将个人名字存储在一个字典中，调用更方便。
 
 
+3.结合使用函数和循环
+greeter.py
+def get_formatted_name(first_name,  last_name, middle_name=' '):
+    """返回整齐的姓名"""
+    full_name = first_name + " " + last_name   
+    return full_name.title()
+
+
+# 这是一个无限循环
+while True:
+    print("\nPlease tell me your name: ")
+    f_name = input("First_name: ")
+    l_name = input("Last name: ")
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print(formatted_name)
+    
+    
+    加入if语句判断终止条件
+    
+    
+    def get_formatted_name(first_name,  last_name, middle_name=' '):
+    """返回整齐的姓名"""
+    full_name = first_name + " " + last_name   
+    return full_name.title()
+
+
+# 这是一个无限循环
+while True:
+    print("\nPlease tell me your name: ")
+    print("\nPlease enter 'q' to quit.")
+
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+
+    l_name = input("Last time: ")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print("\nHello, " + formatted_name + " .")
+
+ 
+
 
