@@ -74,5 +74,28 @@ while True:
     print("\nHello, " + formatted_name + " .")
 
  
+3. 传递列表
 
+def greet_users(names):
+    """向列表中的每位用户都发出简单的问候"""
+    for name in names:
+        msg = "Hello, " + name.title() + " !"
+        print(msg)
 
+usernames = ['hanah', 'ty', 'margot']
+greet_users(usernames)
+# 将greet_users() 定义为接受一个名字列表，并储存在形参names中.
+
+4. 在函数中修改列表
+
+printing_models.py
+
+# 创建一个列表
+def greet_users(names):
+    """向列表中的每位用户都发出简单的问候"""
+    for name in names:
+        msg = "Hello, " + name.title() + " !"
+        print(msg)
+
+usernames = ['hanah', 'ty', 'margot']
+greet_users(usernames)
