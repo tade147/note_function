@@ -1,0 +1,9 @@
+def make_pizzas(*topping):
+    """打印顾客点的食材"""
+    print("Guest need pizza with: ")
+    for topping in topping:
+        print(topping)
+
+make_pizzas('beaf')
+make_pizzas('peperoni', 'seafood')
+make_pizzas('beaf', 'onion', 'tomato')
