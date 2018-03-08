@@ -1,0 +1,15 @@
+def make_cars(factory, kind, **profiles):
+    """储存一辆汽车的所有信息"""
+    cars = {}
+    cars['productor'] = factory
+    cars['type'] = kind
+    print("本车的信息如下： ")
+    for key, value in profiles.items():
+        cars[key] = value
+    return cars
+cars_profiles = make_cars('sabaru', 'outback', color='blue', tow_package=True)
+print(cars_profiles)
+
+
+
+    
