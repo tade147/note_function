@@ -172,3 +172,19 @@ user_profile = build_profile('albert', 'einstein',
                              location='princeton',
                              field='physics')
 print(user_profile)
+
+
+6.将函数储存在模块中
+6.1 导入整个模块
+pizza.py
+import make_pizzas
+
+make_pizzas.make_pizza(16, 'pepperoni')
+make_pizzas.make_pizza(12, 'mushroom', 'green peppers', 'extra cheese')
+import make_pizza让python打开函数
+module_name.function_name()使用函数
+
+from module_name import function_name 导入模块中特定函数
+from module_name import function_name as fn 为函数指定别名
+
+
